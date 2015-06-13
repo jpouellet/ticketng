@@ -6,7 +6,7 @@ considered associated enough with the project to be the honorary
 button-pressing monkey.
 [rng]: https://lists.freebsd.org/pipermail/freebsd-current/2015-February/054580.html "URGENT: RNG broken for last 4 months"
 
-So... if I was going to do this, I was going to do it right. I asked for
+So... if I was going to do this, I was going to do it right. I asked for the
 random number picking script so I could audit it because it'd be silly to
 assert that merely by my running some arbitrary script it somehow becomes a
 fair process.
