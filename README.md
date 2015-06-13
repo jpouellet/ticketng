@@ -13,7 +13,9 @@ fair process.
 
 Turns out, that script had a silent limitation of never letting anybody with
 a ticket number above 256 win. Perhaps there was an implicit assumption that
-the FreeBSD foundation wouldn't ever have that many donors or something? Idk.
+the FreeBSD foundation wouldn't ever have that many donors or something?
+At the closing ceremony this year the slides said there were 283 people,
+so I don't think that's necessarily a safe assumption.
 
 So, I rewrote it the way I'd imagine a real OpenBSD person would.
 
