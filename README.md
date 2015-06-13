@@ -17,7 +17,7 @@ the FreeBSD foundation wouldn't ever have that many donors or something? Idk.
 
 So, I rewrote it the way I'd imagine a real OpenBSD person would.
 
-$ man arc4random_uniform
+$ man 1 arc4random_uniform
 ```
 ARC4RANDOM_UNIFORM(1)	    General Commands Manual	 ARC4RANDOM_UNIFORM(1)
 
@@ -43,9 +43,9 @@ EXAMPLES
 	   $ arc4random_uniform 51
 
 HISTORY
-     arc4random_uniform was written after looking at Ed Maste's shell script
-     from BSDCan 2015 and seeing that it had a silent limit never allowing
-     anybody with a ticket number above 256 to win the raffle.
+     arc4random_uniform was written after looking at the shell script given to
+     him by Ed Maste at BSDCan 2015 and seeing that it had a silent limitation
+     never allowing anybody with a ticket number above 256 to win the raffle.
 
 AUTHORS
      The arc4random_uniform utility was written by Jean-Philippe Ouellet
