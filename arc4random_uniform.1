@@ -1,0 +1,50 @@
+.\" Copyright (c) 2015 Jean-Philippe Ouellet <jpo@vt.edu>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate$
+.Dt ARC4RANDOM_UNIFORM 1
+.Os
+.Sh NAME
+.Nm arc4random_uniform
+.Nd trivial wrapper around the libc routine
+.Sh SYNOPSIS
+.Nm
+.Ar upper_bound
+.Sh DESCRIPTION
+The
+.Nm
+utility prints a single number uniformly distributed but less than
+.Ar upper_bound .
+.Pp
+.Ar upper_bound
+must be between 1 and UINT32_MAX inclusive.
+.Sh EXIT STATUS
+.Ex
+.Sh EXAMPLES
+To emulate the default behavior of the old BSDCan script:
+.Pp
+.Dl $ arc4random_uniform 51
+.Sh HISTORY
+.Nm
+was written after looking at Ed Maste's shell script from BSDCan 2015 and
+seeing that it had a silent limit never allowing anybody with a ticket number
+above 256 to win the raffle.
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Jean-Philippe Ouellet Aq Mt jpo@vt.edu .
+.Sh CAVEATS
+This program is not suitable for raffles at conferences of more than
+UINT32_MAX people.
