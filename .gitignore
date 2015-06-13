@@ -1,0 +1,2 @@
+*.o
+arc4random_uniform
