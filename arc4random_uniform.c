@@ -22,7 +22,7 @@
 int
 main(int argc, char *argv[])
 {
-	uint32_t upper_bound, winner;
+	uint32_t upper_bound, value;
 	const char *errstr;
 
 	if (argc != 2) {
@@ -34,9 +34,9 @@ main(int argc, char *argv[])
 	if (errstr)
 		errx(1, "upper bound %s", errstr);
 
-	winner = arc4random_uniform(upper_bound);
+	value = arc4random_uniform(upper_bound);
 
-	printf("%u\n", winner);
+	printf("%u\n", value);
 
 	return 0;
 }
