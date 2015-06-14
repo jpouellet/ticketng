@@ -42,7 +42,7 @@ EXIT STATUS
 EXAMPLES
      To emulate the default behavior of the old BSDCan script:
 
-	   $ arc4random_uniform 51
+	   $ echo $(($(arc4random_uniform 50) + 1))
 
 HISTORY
      arc4random_uniform was written after looking at the shell script given to
@@ -57,5 +57,5 @@ CAVEATS
      This program is not suitable for raffles at conferences of more than
      UINT32_MAX people.
 
-OpenBSD 5.7			 June 13, 2015			   OpenBSD 5.7
+OpenBSD 5.7			 June 14, 2015			   OpenBSD 5.7
 ```
