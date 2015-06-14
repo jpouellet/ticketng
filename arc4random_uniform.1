@@ -34,7 +34,7 @@ must be between 1 and UINT32_MAX inclusive.
 .Sh EXAMPLES
 To emulate the default behavior of the old BSDCan script:
 .Pp
-.Dl $ arc4random_uniform 51
+.Dl $ echo $(($(arc4random_uniform 50) + 1))
 .Sh HISTORY
 .Nm
 was written after looking at the shell script given to him by Ed Maste at
